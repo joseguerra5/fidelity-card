@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style/index.css">
+</head>
+
+<body>
+  <a href="#" class="logo">
+    <img src="src/assets/Logo.png" alt="" id="logo" class="container">
+  </a>
+  
+  <form action="POST">
+    <div>
+      <input type="text" placeholder="ID do cartão">
+      <button><img src="src/assets/ArrowElbowDownLeft.svg" alt=""></button>
+    </div>
+  </form>
+
+  <main class="even-columns">
+    <section id="profile" class="container">
+      <div>
+        <img src="src/assets/Picture.png" alt="">
+      </div>
+      <div>
+        <span id="userName">Natália Miranda</span>
+        <span id="since">Cliente desde 18/09/2023</span>
+      </div>
+    </section>
+
+    <section id="history" class="container">
+      <header>
+        <span class="headerHistory">histórico</span>
+        <span id="cutCount"></span>
+      </header>
+      <ul>
+        <li>
+          <div>
+            <span id="cutDay"></span>
+            <span id="cutTime"></span>
+          </div>
+          <img src="src/assets/SealCheck.svg" alt="">
+        </li>
+      </ul>
+    </section>
+
+    <section id="pinCard" class="container">
+      <header>
+        <div>
+          <h3>cartão fidelidade</h3>
+          <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
+        </div>
+        <span id="userID">ID: 999-999-999-999</span>
+      </header>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+    <section id="pinScore" class="container">
+      <div>
+        <h5><strong id="restCut"></strong>cortes restantes</h5>
+        <div>
+          <div></div>
+          <span>7 de 10</span>
+        </div>
+      </div>
+      <img src="src/assets/PinGift.png" alt="">
+    </section>
+
+  </main>
+</body>
+
+</html>

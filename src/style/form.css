@@ -1,0 +1,21 @@
+form {
+   & div {
+    position: relative;
+    
+    & input {
+      width: 20rem;
+      height: 3rem;
+      background-color: transparent;
+      border-radius: 8px;
+      border: 0;
+      border: 2px solid var(--gray-400);
+      text-align: left;
+      padding: 1rem;
+    }
+
+    
+    & button, img {
+      position: absolute;
+    }
+   }
+}

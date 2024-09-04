@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+
+  /* Deixa a fonte mais suave*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /*reset de todos os atributos */
+  font: inherit;
+}
+
+:root {
+  --color-pink: #D658B3;
+  --color-green: #45B442;
+  --color-white: #ffffff;
+  --gray-100: #F4F1F2;
+  --gray-200: #E9E7E9;
+  --gray-300: #DFDCDF;
+  --gray-400: #D3CFD2;
+  --gray-500: #756C71;
+  --gray-600: #4A4448;
+  --gray-700: #332B31;
+
+  --gradient-base: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+
+  --font-family: "Oxygen", sans-serif;
+
+  --px-lg: 1.5rem;
+}
+
+body {
+  background-color: var(--gray-200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo {
+  width: 7.25rem;
+}
+
+html {
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+image {
+  max-width: 100%;
+
+}
+
+ul {
+  list-style: none;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+.container {
+  --max-width: 375px;
+  width: min(var(--max-width), 100% - var(--px-lg) * 2);
+  margin-inline: auto;
+}
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 80em
+  }
+
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
