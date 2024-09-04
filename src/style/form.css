@@ -1,21 +1,41 @@
 form {
+
+  margin-bottom: 1.75rem;
    & div {
     position: relative;
     
+    
     & input {
-      width: 20rem;
-      height: 3rem;
+      height: 3.5rem;
       background-color: transparent;
       border-radius: 8px;
       border: 0;
       border: 2px solid var(--gray-400);
       text-align: left;
       padding: 1rem;
+      width: 20rem;
     }
 
-    
-    & button, img {
+    & img {
       position: absolute;
+      right: 0.8rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2.5rem;
+      height: 2.5rem;
+      padding: .2rem;
+      cursor: pointer;
+      background-color: var(--gray-500);
+      border-radius: 8px;
     }
    }
+   
+}
+
+@media (width >= 80em) {
+  & form{
+    & input {
+      width: 25rem;
+    }
+  }
 }
