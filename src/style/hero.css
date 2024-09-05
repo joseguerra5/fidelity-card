@@ -9,107 +9,13 @@ main {
     border-radius: 20px;
     padding: 1.25rem;
   }
-
-  & #profile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 5.7rem;
-    gap: 1rem;
-
-    & div {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      & span {
-        text-wrap: nowrap;
-      }
-    }
-  }
-
-  & #history {
-
-    & header {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 1rem;
-      & .headerTitle {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: .5rem;
-      }
-
-      & #underLine {
-        background-color: var(--gray-200);
-        width: 100%;
-        border-radius: 100%;
-        height: 2px;
-      }
-    }
-
-    & ul {
-      overflow: scroll;
-      overflow-x: hidden;
-
-      & li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: .7rem;
-  
-        & div {
-          display: flex;
-          flex-direction: column;
-          gap: .3rem;
-        }
-      }
-    }
-
-  }
-
-  & #pinScore{
-
-    & img{
-      width: 40px;
-      height: 40px;
-    }
-  }
 }
 
-@media (width >= 80em) {
+@media (width >=80em) {
   & main {
-    height: 80dvh;
+    height: 30rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-
-    & #profile {
-      grid-column: 1/2;
-      grid-row: 1/2;
-      width: 100%;
-      height: 100%;
-    }
-
-    & #history{
-      grid-column: 1/2;
-      grid-row: 2/5;
-      width: 100%;
-    }
-
-    & #pinCard {
-      grid-column: 2/3;
-      grid-row: 1/4;
-      width: 100%;
-    }
-
-    & #pinScore {
-      grid-column: 2/3;
-      grid-row: 4/5;
-      width: 100%;
-
-
-    }
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 }

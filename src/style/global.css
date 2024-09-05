@@ -23,6 +23,14 @@
   --gray-600: #4A4448;
   --gray-700: #332B31;
 
+  --title-md: 600 1.5rem/140% var(--font-family);
+  --title-sm: 600 1.125rem/140% var(--font-family);
+  --subtitle-sm: 600 .75rem/140% var(--font-family);
+  --subtitle-md: 600 .875rem/140% var(--font-family);
+  --text-md: 500 1rem/140% var(--font-family);
+  --text-sm: 500 .875rem/140% var(--font-family);
+  --text-xs: 500 .75rem/140% var(--font-family);
+
   --gradient-base: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
 
   --font-family: "Oxygen", sans-serif;
@@ -35,6 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--gray-900);
 }
 
 #logo {

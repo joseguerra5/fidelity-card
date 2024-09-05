@@ -1,0 +1,108 @@
+#pinCard {
+  display: flex;
+
+  & header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    & span {
+      font: var(--subtitle-sm);
+      color: var(--gray-500);
+      height: 2rem;
+      background: var(--gray-300);
+      border-radius:  24px;
+      display: flex;
+      align-items: center;
+      padding: 0 8px;
+      text-wrap: nowrap;
+    }
+
+    & div {
+      
+      & h3 {
+        font: var(--subtitle-sm);
+        color: var(--gray-500);
+      }
+
+      & p {
+        font: var(--text-xs);
+        color: var(--gray-500);
+      }
+
+    }
+
+  }
+
+  & ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: .5rem;
+    overflow: auto;
+
+    & li {
+      background-color: var(--gray-200);
+      grid-column: auto;
+      grid-row: auto;
+      aspect-ratio: 1/1;
+      border-radius: .85rem;
+
+
+    }
+
+    & .checked {
+      background-image: url(../assets/PinCheck.png);
+      background-repeat: no-repeat;
+      background-size: 3rem;
+      background-position: center;
+
+    }
+
+    & .gift {
+      background-image: url(../assets/Gift-Solid.svg);
+      background-repeat: no-repeat;
+      background-size: 2.5rem;
+      background-position: center;
+    }
+  }
+
+}
+
+@media (width >=80em) { 
+  #pinCard {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    width: 100%;
+    overflow: hidden;
+
+    & header {
+
+      & div {
+
+        & p {
+          font: var(--text-sm);
+        }
+      }
+    }
+
+    & ul {
+      gap: 1rem;
+
+      & li {
+        width: 100%;
+        height: 6rem;
+        border-radius: 1.25rem;
+      }
+
+      & .checked {
+        background-size: 5rem;
+      }
+
+      & .gift {
+        background-size: 4rem;
+      }
+    }
+  }
+}
