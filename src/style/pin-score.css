@@ -37,6 +37,7 @@
       }
     }
   }
+
   & .progress-container {
     width: 90%;
     height: 100%;
@@ -58,12 +59,12 @@
       height: .5rem;
       border-radius: 20px;
 
-      & .progress{
+      & .progress {
         height: 100%;
-        background: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);  /* Cor do progresso */
-        width: 70%;                   /* Largura inicial*/
+        background: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+        width: 0%;
         border-radius: 20px;
-        transition: width 0.4s ease; /* Animação suave */
+        transition: width 0.4s ease;
       }
     }
 
@@ -77,7 +78,7 @@
   }
 }
 
-@media (width >=80em) { 
+@media (width >=80em) {
   #pinScore {
     grid-column: 2/3;
     grid-row: 4/5;
@@ -90,4 +91,3 @@
     & div {}
   }
 }
-

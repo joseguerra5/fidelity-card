@@ -16,10 +16,10 @@
     <img src="src/assets/Logo.png" alt="" id="logo" class="container">
   </a>
 
-  <form action="POST">
+  <form>
     <div>
-      <input type="text" placeholder="ID do cartão">
-      <img src="src/assets/ArrowElbowDownLeft.svg" alt="">
+      <input id="idCard" type="text" placeholder="ID do cartão" maxlength="15">
+      <img id="imgButton" src="src/assets/ArrowElbowDownLeft.svg" alt="">
     </div>
   </form>
 
@@ -27,11 +27,11 @@
 
     <section id="profile" class="container">
       <div class="img-container">
-        <img src="src/assets/Picture.png" alt="">
+        <img src="src/assets/profile.jpg" alt="">
       </div>
       <div>
-        <span id="userName">Natália Miranda</span>
-        <span id="since">Cliente desde 18/09/2023</span>
+        <span id="userName"></span>
+        <span id="since"></span>
       </div>
     </section>
 
@@ -43,29 +43,29 @@
         </div>
         <span id="userID">ID: 999-999-999-999</span>
       </header>
-      <ul>
-        <li class="checked"></li>
-        <li class="checked"></li>
-        <li class="checked"></li>
-        <li class="checked"></li>
-        <li class="checked"></li>
+      <ul id="pinUL">
         <li></li>
         <li></li>
         <li></li>
         <li></li>
-        <li class="gift"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
     </section>
 
 
     <section id="pinScore" class="container">
       <div class="header-progress">
-        <h5><strong id="restCut">3</strong> cortes restantes</h5>
+        <h5><strong id="remainingCut">3</strong> cortes restantes</h5>
         <div class="progress-container">
           <div class="progressBar">
-            <div class="progress"></div>
+            <div class="progress" id="progress"></div>
           </div>
-          <span>7 de 10</span>
+          <span id="outOf">7 de 10</span>
         </div>
       </div>
       <div class="img-container-score">
@@ -76,68 +76,12 @@
     <section id="history" class="container">
       <header>
         <div class="headerTitle">
-          <span class="headerHistory">histórico</span>
-          <span id="cutCount"> 7 cortes</span>
+          <span class="headerHistory">Histórico</span>
+          <span id="cutCount"></span>
         </div>
         <div id="underLine"></div>
       </header>
-      <ul>
-        <li>
-          <div>
-            <span id="cutDay">29/04/2024</span>
-            <span id="cutTime">18:30</span>
-          </div>
-          <img src="src/assets/SealCheck.svg" alt="">
-        </li>
-        <li>
-          <div>
-            <span id="cutDay">29/04/2024</span>
-            <span id="cutTime">18:30</span>
-          </div>
-          <img src="src/assets/SealCheck.svg" alt="">
-        </li>
-        <li>
-          <div>
-            <span id="cutDay">29/04/2024</span>
-            <span id="cutTime">18:30</span>
-          </div>
-          <img src="src/assets/SealCheck.svg" alt="">
-        </li>
-        <li>
-          <div>
-            <span id="cutDay">29/04/2024</span>
-            <span id="cutTime">18:30</span>
-          </div>
-          <img src="src/assets/SealCheck.svg" alt="">
-        </li>
-        <li>
-          <div>
-            <span id="cutDay">29/04/2024</span>
-            <span id="cutTime">18:30</span>
-          </div>
-          <img src="src/assets/SealCheck.svg" alt="">
-        </li>
-        <li>
-          <div>
-            <span id="cutDay">29/04/2024</span>
-            <span id="cutTime">18:30</span>
-          </div>
-          <img src="src/assets/SealCheck.svg" alt="">
-        </li>
-        <li>
-          <div>
-            <span id="cutDay">29/04/2024</span>
-            <span id="cutTime">18:30</span>
-          </div>
-          <img src="src/assets/SealCheck.svg" alt="">
-        </li>
-        <li>
-          <div>
-            <span id="cutDay">29/04/2024</span>
-            <span id="cutTime">18:30</span>
-          </div>
-          <img src="src/assets/SealCheck.svg" alt="">
-        </li>
+      <ul id="historyUL">
       </ul>
     </section>
 
