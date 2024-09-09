@@ -19,7 +19,9 @@
   <form>
     <div>
       <input id="idCard" type="text" placeholder="ID do cartão" maxlength="15">
-      <img id="imgButton" src="src/assets/ArrowElbowDownLeft.svg" alt="">
+      <button id="submitButton" disabled>
+        <img id="imgButton" src="src/assets/ArrowElbowDownLeft.svg" alt="">
+      </button>
     </div>
   </form>
 
@@ -27,7 +29,7 @@
 
     <section id="profile" class="container">
       <div class="img-container">
-        <img src="src/assets/profile.jpg" alt="">
+        <img src="src/assets/profile.jpg" alt="Imagem do perfil" id="imgProfile">
       </div>
       <div>
         <span id="userName"></span>
@@ -41,7 +43,7 @@
           <h3>cartão fidelidade</h3>
           <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
         </div>
-        <span id="userID">ID: 999-999-999-999</span>
+        <span id="userID">ID</span>
       </header>
       <ul id="pinUL">
         <li></li>
@@ -60,12 +62,12 @@
 
     <section id="pinScore" class="container">
       <div class="header-progress">
-        <h5><strong id="remainingCut">3</strong> cortes restantes</h5>
+        <h5><strong id="remainingCut">0</strong> cortes restantes</h5>
         <div class="progress-container">
           <div class="progressBar">
             <div class="progress" id="progress"></div>
           </div>
-          <span id="outOf">7 de 10</span>
+          <span id="outOf">0 de 10</span>
         </div>
       </div>
       <div class="img-container-score">
@@ -85,10 +87,13 @@
       </ul>
     </section>
 
-
-
-
-
+    <div id="congratModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Parabéns!</h2>
+        <p>Seu próximo corte é gratuito!</p>
+      </div>
+    </div>
   </main>
 </body>
 
